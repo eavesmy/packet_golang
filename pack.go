@@ -6,6 +6,7 @@ import (
 	"reflect"
 )
 
+// create a new data pack and return bytes.
 func NewPacket(id uint32, data interface{}) []byte {
 	t := reflect.TypeOf(data)
 
